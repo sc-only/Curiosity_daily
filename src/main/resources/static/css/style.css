@@ -2486,6 +2486,7 @@ input:-moz-placeholder {
 }
 
 .dengru {
+    border: 0px;
     display: block;
     margin: 30px auto;
     padding: 0;
