@@ -11,7 +11,13 @@ $(document).ready(function () {
             type: "post",
             data:{"telephone":telephone,"password":password},
             success:function (data) {
-
+                if (data=="no2"){
+                    alert("用户名不存在");
+                }else if(data=="no"){
+                    alert("密码错误");
+                }else{
+                    alert("登录成功");
+                }
             },
             error:function () {
                 console.log(data);
